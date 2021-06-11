@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Emtsove Danil</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <!--Favicon-->
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+</head>
+<body>
+  <!--preloader-->
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
+  <!--/Preloader-->
+  <div class="wrapper">
+    <!--Header-->
+    <div class="wrapper-header">
+      <header class="header">
+        <div class="menu">
+          <ul>
+            <li class="home"><a href="#block-1">Home</a></li>
+            <li><a href="#block-2">About me</a></li>
+            <li><a href="#block-3">Skills</a></li>
+            <li><a href="#block-4">Portfolio</a></li>
+            <li><a href="#block-5">Contacts</a></li>
+          </ul>
+        </div>
+      </header>
+      <!--adaptive menu-->
+      <div class="adaptive-menu menu-rest">
+        <a href="#" class="menu-btn btn"></a>
+        <nav class="menu-list">
+          <a href="#" class="menu-close btn"></a>
+          <a href="#block-1" class="home">Home</a>
+          <a href="#block-2">About me</a>
+          <a href="#block-3">Skills</a>
+          <a href="#block-4">Portfolio</a>
+          <a href="#block-5">Contacts</a>
+        </nav>
+      </div>
+      <!--/adaptive menu-->
+      <div id="block-1" class="header-info">
+        <div class="name">
+          <h1>Danil<br>Emtsove</h1>
+          <p class="designer">UX | UI Designer<br>24 years old, Minsk</p>
+          <p class="lang">RU | ENG</p>
+        </div>
+        <div class="man"></div>
+      </div>
+    </div>
+    <!--/Header-->
+    <!--About-->
+    <div id="block-2" class="about">
+      <h1>About me</h1>
+      <p>Hi, I'm Denis – UX/UI designer from Minsk. <br>
+        I'm interested in design and everything connected with it.
+        <br>
+        <br>
+        <br>
+        I'm studying at courses "Web and mobile design 
+        <br>interfaces" in IT-Academy.
+        <br>
+        <br>
+        <br>
+        Ready to implement excellent projects
+        <br>with wonderful people.</p>
+    </div>
+    <!--/About-->
+    <!--Skills-->
+    <div id="block-3" class="skills">
+      <h1>Skills</h1>
+      <p>I work in such programs as</p>
+      <div class="skills-wrapper">
+        <div class="skills-wrapper__block">
+            <img src="img/ico/PS.svg" alt="PhotoShop">
+            <p>Adobe<br> Photoshop</p>
+            <div class="skills-wrapper__block-stars">
+              <img src="img/ico/star.svg" alt="star">
+            </div>
+        </div>
+        <div class="skills-wrapper__block">
+          <img src="img/ico/AI.svg" alt="AdobeIllustrator">
+            <p>Adobe<br>Illustrator</p>
+            <div class="skills-wrapper__block-stars">
+              <img src="img/ico/staril.svg" alt="star">
+            </div>
+        </div>
+        <div class="skills-wrapper__block">
+          <img src="img/ico/AE.svg" alt="AdobeIllustrator">
+          <p>Adobe<br>After Effects</p>
+          <div class="skills-wrapper__block-stars">
+            <img src="img/ico/star.svg" alt="star">
+          </div>
+        </div>
+        <div class="skills-wrapper__block">
+          <img src="img/ico/Figma.svg" alt="figma">
+          <p>Figma<br>Software</p>
+          <div class="skills-wrapper__block-stars">
+            <img src="img/ico/star.svg" alt="star">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/Skills-->
+    <!--Portfolio-->
+    <div id="block-4" class="portfolio">
+      <h1>Portfolio</h1>
+      <a href="#"><img src="img/background/1.png" alt="portfolio"></a>
+      <a href="#" class="text"><p>Online fashion store - Homepage</p></a>
+      <a href="#"><img src="img/background/2.png" alt="portfolio" width="800px" height="450px"></a>
+      <a href="#" class="text"><p>Reebok Store - Concept</p></a>
+      <a href="#"><img src="img/background/3.png" alt="portfolio" width="800px" height="450px"></a>
+      <a href="#" class="text"><p>Braun Landing Page - Concept</p></a>
+    </div>
+    <!--/Portfolio-->
+    <!--Footer-->
+    <div id="block-5" class="footer">
+      <h1>Contacts</h1>
+      <p>Want to know more or just chat?<br> You are welcome!</p>
+      <a href="#" class="button">Send message</a>
+      <div class="footer-icon">
+        <a href="#"><img src="img/ico/in.svg" alt="LinkedIn"></a>
+        <a href="#"><img src="img/ico/ins.svg" alt="Instagram"></a>
+        <a href="#"><img src="img/ico/Be.svg" alt="Behance"></a>
+        <a href="#"><img src="img/ico/ball.svg" alt="Ball"></a>
+      </div>
+      <p>Like me on<br>LinkedIn, Instagram, Behance, Dribble</p>
+    </div>
+    <!--.Footer-->
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(window).on('load', function () {
+      var $preloader = $('#preloader'),
+      $svg_anm   = $preloader.find('.svg_anm');
+      $svg_anm.fadeOut();
+      $preloader.delay(700).fadeOut('slow');
+	  });
+  </script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
